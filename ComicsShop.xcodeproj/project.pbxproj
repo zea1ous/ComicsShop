@@ -3,25 +3,31 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2E7D8D2C58C48981351DDBAB /* Pods_ComicsShop.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4ADA97577E6107A247ABD845 /* Pods_ComicsShop.framework */; };
 		58A9379922ECBB4100BA6A48 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9379822ECBB4100BA6A48 /* AppDelegate.swift */; };
-		58A9379B22ECBB4100BA6A48 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9379A22ECBB4100BA6A48 /* ViewController.swift */; };
-		58A9379E22ECBB4100BA6A48 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A9379C22ECBB4100BA6A48 /* Main.storyboard */; };
+		58A9379B22ECBB4100BA6A48 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A9379A22ECBB4100BA6A48 /* LoginViewController.swift */; };
 		58A937A022ECBB4300BA6A48 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 58A9379F22ECBB4300BA6A48 /* Assets.xcassets */; };
 		58A937A322ECBB4300BA6A48 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 58A937A122ECBB4300BA6A48 /* LaunchScreen.storyboard */; };
+		58A937AB22ECCD7600BA6A48 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A937AA22ECCD7600BA6A48 /* LoginView.swift */; };
+		58A937AE22ECD0EC00BA6A48 /* TextInputView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 58A937AD22ECD0EC00BA6A48 /* TextInputView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4ADA97577E6107A247ABD845 /* Pods_ComicsShop.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ComicsShop.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A9379522ECBB4100BA6A48 /* ComicsShop.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ComicsShop.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		58A9379822ECBB4100BA6A48 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		58A9379A22ECBB4100BA6A48 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		58A9379D22ECBB4100BA6A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		58A9379A22ECBB4100BA6A48 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
 		58A9379F22ECBB4300BA6A48 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		58A937A222ECBB4300BA6A48 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		58A937A422ECBB4300BA6A48 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		58A937AA22ECCD7600BA6A48 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		58A937AD22ECD0EC00BA6A48 /* TextInputView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputView.swift; sourceTree = "<group>"; };
+		9C6F21242482F06EAB640336 /* Pods-ComicsShop.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicsShop.release.xcconfig"; path = "Target Support Files/Pods-ComicsShop/Pods-ComicsShop.release.xcconfig"; sourceTree = "<group>"; };
+		FFF64D9E4C19BDA3469CC9AE /* Pods-ComicsShop.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ComicsShop.debug.xcconfig"; path = "Target Support Files/Pods-ComicsShop/Pods-ComicsShop.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,6 +35,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2E7D8D2C58C48981351DDBAB /* Pods_ComicsShop.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -40,6 +47,8 @@
 			children = (
 				58A9379722ECBB4100BA6A48 /* ComicsShop */,
 				58A9379622ECBB4100BA6A48 /* Products */,
+				5F5467F0CDA06575909C16FB /* Pods */,
+				CECD62838EFBA21E89C20EE8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,14 +63,40 @@
 		58A9379722ECBB4100BA6A48 /* ComicsShop */ = {
 			isa = PBXGroup;
 			children = (
+				58A937AC22ECD0C000BA6A48 /* Login */,
 				58A9379822ECBB4100BA6A48 /* AppDelegate.swift */,
-				58A9379A22ECBB4100BA6A48 /* ViewController.swift */,
-				58A9379C22ECBB4100BA6A48 /* Main.storyboard */,
 				58A9379F22ECBB4300BA6A48 /* Assets.xcassets */,
 				58A937A122ECBB4300BA6A48 /* LaunchScreen.storyboard */,
 				58A937A422ECBB4300BA6A48 /* Info.plist */,
 			);
 			path = ComicsShop;
+			sourceTree = "<group>";
+		};
+		58A937AC22ECD0C000BA6A48 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				58A9379A22ECBB4100BA6A48 /* LoginViewController.swift */,
+				58A937AA22ECCD7600BA6A48 /* LoginView.swift */,
+				58A937AD22ECD0EC00BA6A48 /* TextInputView.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		5F5467F0CDA06575909C16FB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				FFF64D9E4C19BDA3469CC9AE /* Pods-ComicsShop.debug.xcconfig */,
+				9C6F21242482F06EAB640336 /* Pods-ComicsShop.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		CECD62838EFBA21E89C20EE8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				4ADA97577E6107A247ABD845 /* Pods_ComicsShop.framework */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -71,9 +106,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 58A937A722ECBB4300BA6A48 /* Build configuration list for PBXNativeTarget "ComicsShop" */;
 			buildPhases = (
+				ECFBBA4DD68AAF9A16FEC68A /* [CP] Check Pods Manifest.lock */,
 				58A9379122ECBB4100BA6A48 /* Sources */,
 				58A9379222ECBB4100BA6A48 /* Frameworks */,
 				58A9379322ECBB4100BA6A48 /* Resources */,
+				13CA8F81DB45162CB38498DC /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,18 +161,61 @@
 			files = (
 				58A937A322ECBB4300BA6A48 /* LaunchScreen.storyboard in Resources */,
 				58A937A022ECBB4300BA6A48 /* Assets.xcassets in Resources */,
-				58A9379E22ECBB4100BA6A48 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		13CA8F81DB45162CB38498DC /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComicsShop/Pods-ComicsShop-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-ComicsShop/Pods-ComicsShop-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-ComicsShop/Pods-ComicsShop-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		ECFBBA4DD68AAF9A16FEC68A /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ComicsShop-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		58A9379122ECBB4100BA6A48 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				58A9379B22ECBB4100BA6A48 /* ViewController.swift in Sources */,
+				58A937AE22ECD0EC00BA6A48 /* TextInputView.swift in Sources */,
+				58A937AB22ECCD7600BA6A48 /* LoginView.swift in Sources */,
+				58A9379B22ECBB4100BA6A48 /* LoginViewController.swift in Sources */,
 				58A9379922ECBB4100BA6A48 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -143,14 +223,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		58A9379C22ECBB4100BA6A48 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				58A9379D22ECBB4100BA6A48 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		58A937A122ECBB4300BA6A48 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -280,10 +352,12 @@
 		};
 		58A937A822ECBB4300BA6A48 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = FFF64D9E4C19BDA3469CC9AE /* Pods-ComicsShop.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ComicsShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -291,16 +365,18 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RagnaCode.ComicsShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
 		58A937A922ECBB4300BA6A48 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9C6F21242482F06EAB640336 /* Pods-ComicsShop.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				INFOPLIST_FILE = ComicsShop/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -308,7 +384,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = RagnaCode.ComicsShop;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};

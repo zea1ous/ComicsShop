@@ -1,0 +1,6 @@
+framework module Pods_ComicsShop {
+  umbrella header "Pods-ComicsShop-umbrella.h"
+
+  export *
+  module * { export * }
+}
